@@ -11,7 +11,7 @@ public class Application {
             Server server = new Server(8080);
             // host: 'http://localhost:8080/example'
             ServletContextHandler handler = new ServletContextHandler(server, "/example");
-            // curl --request 'GET' --data '[101, 103]' 'http://localhost:8080/example/'
+            // curl --request 'GET' --data '{"ids":[101, 103, 103]}' 'http://localhost:8080/example/'
             handler.addServlet(ExampleServlet.class, "/");
             server.start();
         } catch (RuntimeException e) {
