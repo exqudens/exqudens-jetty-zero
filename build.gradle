@@ -45,7 +45,7 @@ shadowJar {
                 'Project-Group': project.group,
                 'Project-Name': project.name,
                 'Project-Version': project.version,
-                'Main-Class': 'com.exqudens.game.Application'
+                'Main-Class': 'exqudens.jetty.Application'
         )
     }
 }
